@@ -41,14 +41,14 @@
     outline: none;
     background: transparent;
 }
-.slick-prev:hover,
-.slick-prev:focus,
-.slick-next:hover,
-.slick-next:focus
+.slick-prev,
+.slick-prev,
+.slick-next,
+.slick-next
 {
-    color: transparent;
+    color: #ffffff;
     outline: none;
-    background: transparent;
+    background: #d34346;
 }
 .slick-prev:hover:before,
 .slick-prev:focus:before,
@@ -76,41 +76,24 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
-
 .slick-prev
 {
-    left: -25px;
+ background: #d34346 url(../uploads/angle.png);
+ width: 12px;
+ height: 19px;
+ z-index: 1;
+ top: 46%;
+ margin-top: 2px;
 }
-[dir='rtl'] .slick-prev
-{
-    right: -25px;
-    left: auto;
-}
-.slick-prev:before
-{
-    content: '←';
-}
-[dir='rtl'] .slick-prev:before
-{
-    content: '→';
-}
-
 .slick-next
 {
-    right: -25px;
-}
-[dir='rtl'] .slick-next
-{
-    right: auto;
-    left: -25px;
-}
-.slick-next:before
-{
-    content: '→';
-}
-[dir='rtl'] .slick-next:before
-{
-    content: '←';
+   background: #d34346 url(../uploads/angle.png);
+   width: 12px;
+   height: 19px;
+   transform: scaleX(-1);
+    top: 37%;
+    margin-top: 0px;
+    right: 0;
 }
 
 /* Dots */
