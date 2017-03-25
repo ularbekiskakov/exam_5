@@ -1,9 +1,67 @@
 body {
 	font-size: 16px;
-	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+	font-family: 'Open Sans', sans-serif;
 }
 .container {
 	width: 100%;
 	max-width: 1200px;
-	min-width: 360px;
 }
+.header {
+	background: #d34346;
+	border-bottom: 10px solid #bd2d30;
+	position: relative;
+}
+.header nav a {
+	font-weight: bold;
+	text-transform: uppercase;
+	text-decoration: none;
+	color: #ffffff;
+}
+.menu-toggle {
+	float: right;
+	background: #d34346;
+	padding: 11px 15px 11px;
+	border: none;
+	border: 1px solid #bd2d30;
+}
+.menu-toggle .fa-bars {	
+	color: #ffffff;
+	font-size: 20px;
+}
+.header nav {
+
+	display: none;
+	position: absolute;
+	transition: all 3s;
+	top: 46px;
+	right: 0;
+	width: 100%;
+	background: #d34346;
+	padding: 5px 20px;
+	border-bottom-right-radius: 1px;
+	border-bottom-left-radius: 1px;
+	z-index: 1;
+	text-align: center;
+}
+.header nav a {
+	text-decoration: none;
+	text-transform: uppercase;
+	color: #ffffff;
+	font-weight: bold;
+	font-size: 14px;
+	display: block;
+	padding: 7px 0;
+}
+.menu-toggle:hover + nav {
+	z-index: 1;
+	display: block;
+}
+.header nav a:hover {
+	background: #bd2d30;
+	transition: 0.5s;
+	box-sizing: border-box;
+} 
+nav:hover {
+	display: block;
+}
+
